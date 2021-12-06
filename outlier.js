@@ -11,7 +11,11 @@ const outlier = (arr) => {
     }
 
     if (odd.length > even.length) {
-        return even[i];
+        return even[0];
     }
-    return odd[i];
+    return odd[0];
 }
+
+console.log(outlier([1, 2, 3]));
+console.log(outlier([2, 3, 4]));
+console.log(outlier([444, 2222, 3]));
